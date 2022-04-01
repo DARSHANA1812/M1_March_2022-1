@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     // printf("demand=> %d",sum2);
 
    //-------------> Logic to calculate minimum cost
-     nn: if(sum1!=sum2)
+  if(sum1!=sum2)
   {
    printf("problem is unbalanced");
    exit(0);
@@ -90,9 +90,10 @@ int main(int argc, char *argv[])
     printf("| ");
     for(j=0;j<n;j++)
     {
-      printf("%d ",c[i][j]," ");
+      printf("%d ",c[i][j]);
     }
-    printf("|  ",s1[i],"\n|    |");
+    printf("|  ",s1[i]);
+    printf("\n|    |");
     printf("\n|    |\n");
     }
     printf(" ------------------------------------------------\n");
@@ -100,8 +101,9 @@ int main(int argc, char *argv[])
     {
       printf("%d ",d1[i]);
     }
-    printf("\n  THE MINIMUM TRANSPORTATION COST = %d ",sum ," units");
-  getch();
+    printf("\n  THE MINIMUM TRANSPORTATION COST = %d ",sum);
+    printf(" units");
+    getch();
 
 }
 

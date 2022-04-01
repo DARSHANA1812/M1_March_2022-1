@@ -74,7 +74,7 @@ int cal(int m1,int n1,int cost[][n1],int sup[],int dem[])
     // Gets cost matrix ,supply and demand
   getInputData(n1,cost,sup,dem) ;
 
-  nn: if(sum1!=sum2)
+   if(sum1!=sum2)
   {
    printf("problem is unbalanced");
    exit(0);
@@ -111,9 +111,10 @@ int cal(int m1,int n1,int cost[][n1],int sup[],int dem[])
     printf("| ");
     for(j=0;j<n;j++)
     {
-      printf("%d ",c[i][j]," ");
+      printf(" %d ",c[i][j]);
     }
-    printf("|  ",s1[i],"\n|    |");
+    printf("|  ",s1[i]);
+    printf("\n|    |");
     printf("\n|    |\n");
     }
     printf(" ------------------------------------------------\n");
@@ -121,7 +122,8 @@ int cal(int m1,int n1,int cost[][n1],int sup[],int dem[])
     {
       printf("%d ",d1[i]);
     }
-    printf("\n  THE MINIMUM TRANSPORTATION COST = %d ",sum ," units \n");
+    printf("\n  THE MINIMUM TRANSPORTATION COST = %d ",sum );
+    printf(" units \n");
   //}
    return sum ; 
 }
